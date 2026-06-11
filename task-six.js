@@ -128,4 +128,3 @@ document.getElementById("city").addEventListener("keydown",function(event){
         getWeather();
     }
 });
-

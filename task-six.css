@@ -7,6 +7,12 @@ body{
         
         min-height: 100vh;
 }
+html{
+  scroll-behavior: smooth;
+}
+#today-weather{
+  padding-top: 0.002cqw;
+}
 :root {
         color-scheme: dark;
         --bg: #0f2614;
@@ -242,7 +248,7 @@ container-type: inline-size;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 8cqw 0 2.5cqw;
+        margin: 7cqw 0 2.5cqw;
       }
 
       .section-title h2 {
@@ -256,8 +262,14 @@ container-type: inline-size;
         gap: 3cqw;
         grid-template-columns: 1fr 1fr;
         align-items: start;
-      height: 31.5cqw;
+     
         container-type: inline-size;
+          background: var(--surface);
+        border: 0.1cqw solid var(--border);
+        border-radius: 2cqw;
+        box-shadow: var(--shadow);
+        padding: 2.4cqw;
+        transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
       }
 
       .weather-summary {
@@ -308,6 +320,7 @@ container-type: inline-size;
       .weather-box i {
         color: var(--accent-strong);
         font-size: 7cqw;
+        margin: 0;
       }
       .weather-box h3{
         margin: 0;
@@ -320,6 +333,7 @@ container-type: inline-size;
       .weather-box p{
         margin: 1cqw;
         font-size: 4cqw;
+        margin: 0;
       }
 
      
@@ -358,91 +372,68 @@ container-type: inline-size;
      
       .info-grid {
         display: grid;
-        gap: 20px;
+        gap: 2cqw;
+        container-type: inline-size;
+      
       }
 
       .info-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
-      .info-card,
-     
-      .weather-card {
+      .info-card{
+       container-type: inline-size;
         background: var(--surface);
-        border: 1px solid var(--border);
-        border-radius: 28px;
+        border: 0.1cqw solid var(--border);
+        border-radius: 2cqw;
         box-shadow: var(--shadow);
-        padding: 24px;
+        padding: 2.4cqw;
         transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+        container-type: inline-size;
       }
 
       .info-card:hover,
-      .place-card:hover,
-      .weather-card:hover {
-        transform: translateY(-5px);
+      .weather-box:hover {
+        transform: translateY(-1cqw);
         border-color: rgba(140, 231, 140, 0.45);
       }
 
-      .info-card h3,
-      .place-card h3,
-      .weather-card h3 {
-        margin: 0 0 12px;
-      }
-
-      .info-card p,
-      .place-card p {
+      
+.info-card h3{
+    margin: 0;
+    
+        font-size: 4cqw;
+    
+}
+      .info-card p {
         color: var(--muted);
         line-height: 1.7;
+        font-size: 3.2cqw;
+        
       }
 
-      .places-grid {
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      }
+   
+     
 
-      .place-card {
-        cursor: pointer;
-        padding: 28px 22px;
-        display: flex;
-        flex-direction: column;
-        gap: 14px;
-      }
-
-      .place-card span {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        color: var(--accent);
-        font-weight: 700;
-      }
-
-      .place-card button {
-        margin-top: auto;
-        border: none;
-        background: rgba(140, 231, 140, 0.12);
-        color: var(--accent);
-        border-radius: 999px;
-        padding: 10px 16px;
-        font-weight: 700;
-        cursor: pointer;
-      }
-
-      /* main div */
+      
 
       
     
 
       .footer {
-        margin-top: 44px;
-        padding: 28px 24px;
+        margin-top: 4.4cqw;
+        padding: 2cqw 2cqw;
         background: rgba(14, 29, 16, 0.88);
-        border: 1px solid rgba(140, 231, 140, 0.12);
-        border-radius: 28px;
+        border: 0.1cqw solid rgba(140, 231, 140, 0.12);
+        border-radius: 2cqw;
+        container-type: inline-size;
       }
 
       .footer p {
         margin: 0;
         color: var(--muted);
         line-height: 1.8;
+        font-size: 1.6cqw;
       }
 
      
@@ -499,5 +490,5 @@ container-type: inline-size;
       }
 
       .weather-card.slide-animation {
-        animation: slideToTop 0.6s ease-out forwards;
+        animation: slideToTop 5s ease-out forwards;
       }

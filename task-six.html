@@ -23,16 +23,15 @@
       </div>
       <div class="search">
         <input id="city" type="text" placeholder="search" />
-        <a href="#today-weather"
-          ><i onclick="getWeather()" class="fi fi-rs-search"></i
-        ></a>
+       <a href="#today-weather"> <i onclick="getWeather()" class="fi fi-rs-search"></i></a>
+      
       </div>
       <div class="sign-up-button">
         <button>sign up</button>
       </div>
     </nav>
 
-    <main>
+    <main id="weather-card">
       <section class="hero">
         <div class="hero-copy">
           <p id="eyebrow"><i class="fa-solid fa-leaf"></i> Weather & Travel</p>
@@ -65,12 +64,14 @@
           </div>
         </div>
       </section>
-
-      <section>
-        <div class="section-title">
-          <h2 id="today-weather">Today’s weather</h2>
+      
+      <section id="today-weather" >
+        <div class="section-title" >
+          <h2 >Today’s weather</h2>
         </div>
-        <div class="weather-card" id="weather-card">
+        
+
+        <div class="weather-card" >
           <div class="weather-summary">
             <div class="weather-location-name">
               <h3 id="location">Search a city or choose a destination</h3>
@@ -115,9 +116,14 @@
               id="cityImage"
               alt="City Image"
             />
+
+
+
+
           </div>
          
         </div>
+
       </section>
        <section>
         <div class="section-title">
