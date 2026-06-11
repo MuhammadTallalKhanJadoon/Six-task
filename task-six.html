@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="Assets/logo.png" />
+    <link rel="stylesheet" href="task-six.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-straight/css/uicons-regular-straight.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <title>Mr. Weather</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="Assets/logo.png" alt="" />
+        <h1>Mr. Weather</h1>
+      </div>
+      <div class="search">
+        <input id="city" type="text" placeholder="search" />
+        <a href="#today-weather"
+          ><i onclick="getWeather()" class="fi fi-rs-search"></i
+        ></a>
+      </div>
+      <div class="sign-up-button">
+        <button>sign up</button>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p id="eyebrow"><i class="fa-solid fa-leaf"></i> Weather & Travel</p>
+          <h1>
+            Discover the weather, explore greener destinations, and travel with
+            confidence.
+          </h1>
+          <p>
+            Search any city to see a beautiful weather summary with icons, local
+            context, and travel inspiration. Click a destination to load its
+            forecast instantly.
+          </p>
+          <div class="alert">
+            Tap a place below for an instant travel weather check and discover
+            the best conditions for your next adventure.
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+            alt="Weather landscape"
+          />
+          <div class="hero-card">
+            <h2>Weather for every journey</h2>
+            <p>
+              From rainy days in the coast to sunny mountain escapes, GreenSky
+              makes it easy to plan your next trip with confidence.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-title">
+          <h2 id="today-weather">Today’s weather</h2>
+        </div>
+        <div class="weather-card" id="weather-card">
+          <div class="weather-summary">
+            <div class="weather-location-name">
+              <h3 id="location">Search a city or choose a destination</h3>
+            </div>
+            <div class="weather-metrics">
+              <div class="weather-box">
+                <h3>
+                  <i class="fa-solid fa-temperature-high"></i> Temperature
+                </h3>
+                <p id="temp">--</p>
+              </div>
+
+              <div class="weather-box">
+                <h3><i class="fi fi-rs-humidity"></i>Humidity</h3>
+                <p id="humidity">--</p>
+              </div>
+
+              <div class="weather-box">
+                <h3><i class="fa-solid fa-cloud-sun"></i>Cloud Cover</h3>
+                <p id="cloud">--</p>
+              </div>
+
+              <div class="weather-box">
+                <h3><i class="fi fi-rs-wind"></i> Wind Speed</h3>
+                <p id="wind">--</p>
+              </div>
+
+              <div class="weather-box">
+                <h3><i class="fa-solid fa-cloud-rain"></i> Rain Chance</h3>
+                <p id="rain">--</p>
+              </div>
+
+              <div class="weather-box">
+                <h3><i class="fa-solid fa-cloud-meatball"></i>Condition</h3>
+                <p id="condition">--</p>
+              </div>
+            </div>
+          </div>
+          <div class="weather-image" id="weather-image">
+            <img
+              src="https://images.unsplash.com/photo-1501973801540-537f08ccae7b?auto=format&fit=crop&w=900&q=80"
+              id="cityImage"
+              alt="City Image"
+            />
+          </div>
+         
+        </div>
+      </section>
+       <section>
+        <div class="section-title">
+            <div class="about-result" id="about-result"></div>
+        </div>
+       </section>
+      <section>
+        <div class="section-title">
+          <h2>Why weather matters for travel</h2>
+        </div>
+        <div class="info-grid">
+          <div class="info-card">
+            <h3>Perfect day planning</h3>
+            <p>
+              Check temperatures, rain forecasts and wind conditions before
+              packing. That means less surprises and more outdoor fun.
+            </p>
+          </div>
+          <div class="info-card">
+            <h3>Icon-rich weather cards</h3>
+            <p>
+              Beautiful cards show the weather clearly with green accents,
+              smooth hover motion, and images that match the sky and scenery.
+            </p>
+          </div>
+          <div class="info-card">
+            <h3>Smart travel tips</h3>
+            <p>
+              We recommend the best seasons for each location, suggest sunny
+              escapes, and highlight whether you should pack a jacket or
+              sunscreen.
+            </p>
+          </div>
+          <div class="info-card">
+            <h3>One tap destination view</h3>
+            <p>
+              Click any travel place to instantly update the weather card. It’s
+              the fastest way to compare climate for your next trip.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>
+          GreenSky is your travel weather companion. Use the search bar or
+          destination cards, and enjoy data-driven planning with a fresh green
+          interface and smooth motions.
+        </p>
+      </footer>
+    </main>
+    <script src="task-six.js"></script>
+  </body>
+</html>
